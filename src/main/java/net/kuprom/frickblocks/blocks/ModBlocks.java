@@ -21,7 +21,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, FrickBlocks.MOD_ID);
 
-    public static final RegistryObject<Block> MANDARIN_BLOCK = registerBlock("mandarin_block",
+    public static final RegistryObject<Block> ACACIA_PLANKS_FRICK_A = registerBlock("acacia_planks_frick_A",
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).
                     instrument(NoteBlockInstrument.BASEDRUM).
                     requiresCorrectToolForDrops().strength(10.0F, 10.0F)

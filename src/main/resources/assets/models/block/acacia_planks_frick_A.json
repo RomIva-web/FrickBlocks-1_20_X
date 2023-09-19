@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "frickblocks:block/acacia_planks_frick_A"
+  }
+}

@@ -1,6 +1,7 @@
 {
-  "item.frickblock.mandarin": "Mandarin",
-  "item.frickblock.raw_mandarin": "Raw Mandarin",
-  "block.frickblock.mandarin_block": "Mandarin of Block",
-  "creativetab.tutorial_tab": "Mandarin Tutorial tab"
+  "item.frickblocks.acacia_planks_frick_A": "ACACIA PLANKS FRICK A",
+
+  "block.frickblocks.acacia_planks_frick_A": "ACACIA PLANKS FRICK A",
+
+  "creativeTab.tutorial_tab": "Frick Block"
 }

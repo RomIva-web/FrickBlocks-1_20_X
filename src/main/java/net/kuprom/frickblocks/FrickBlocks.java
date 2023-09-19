@@ -58,8 +58,8 @@ public class FrickBlocks {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.MANDARIN);
-            event.accept(ModItems.RAW_MANDARIN);
+            event.accept(ModItems.ACACIA_PLANKS_FRICK_A);
+            event.accept(ModBlocks.ACACIA_PLANKS_FRICK_A);
         }
     }
 

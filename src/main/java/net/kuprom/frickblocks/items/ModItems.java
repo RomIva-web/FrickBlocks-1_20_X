@@ -14,8 +14,6 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
-    public static final RegistryObject<Item> MANDARIN = ITEMS.register("mandarin",
-            ()->new Item(new Item.Properties()));
-    public static final RegistryObject<Item> RAW_MANDARIN = ITEMS.register("raw_mandarin",
+    public static final RegistryObject<Item> ACACIA_PLANKS_FRICK_A = ITEMS.register("acacia_planks_frick_A",
             ()->new Item(new Item.Properties()));
 }
