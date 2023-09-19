@@ -1,6 +1,9 @@
 package net.kuprom.frickblocks;
 
 import com.mojang.logging.LogUtils;
+import net.kuprom.frickblocks.ModCreativeModTabs.ModCreativeModTabs;
+import net.kuprom.frickblocks.blocks.ModBlocks;
+import net.kuprom.frickblocks.items.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -37,11 +40,14 @@ public class FrickBlocks {
     public FrickBlocks() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+        ModCreativeModTabs.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
-
-
+        // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
     }
@@ -51,7 +57,10 @@ public class FrickBlocks {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.MANDARIN);
+            event.accept(ModItems.RAW_MANDARIN);
+        }
     }
 
     @SubscribeEvent
