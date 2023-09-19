@@ -1,4 +1,4 @@
-package net.kuprom.frickblocks.items;
+package net.kuprom.frickblocks.item;
 
 import net.kuprom.frickblocks.FrickBlocks;
 import net.minecraft.world.item.Item;
@@ -14,6 +14,4 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
-    public static final RegistryObject<Item> ACACIA_PLANKS_FRICK_A = ITEMS.register("acacia_planks_frick_A",
-            ()->new Item(new Item.Properties()));
 }

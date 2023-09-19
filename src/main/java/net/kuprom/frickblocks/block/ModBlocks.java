@@ -1,11 +1,10 @@
-package net.kuprom.frickblocks.blocks;
+package net.kuprom.frickblocks.block;
 
 import net.kuprom.frickblocks.FrickBlocks;
-import net.kuprom.frickblocks.items.ModItems;
+import net.kuprom.frickblocks.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -21,7 +20,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, FrickBlocks.MOD_ID);
 
-    public static final RegistryObject<Block> ACACIA_PLANKS_FRICK_A = registerBlock("acacia_planks_frick_A",
+    public static final RegistryObject<Block> ACACIA_PLANKS_FRICK_A = registerBlock("acacia_planks_frick_a",
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).
                     instrument(NoteBlockInstrument.BASEDRUM).
                     requiresCorrectToolForDrops().strength(10.0F, 10.0F)
